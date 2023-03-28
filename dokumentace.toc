@@ -8,42 +8,46 @@
 \contentsline {paragraph}{}{3}{}%
 \contentsline {paragraph}{}{3}{}%
 \contentsline {paragraph}{}{3}{}%
-\contentsline {subsection}{\numberline {2.1}Depth First Search}{4}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Popis algoritmu}{4}{}%
-\contentsline {paragraph}{}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Depth First Search}{3}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Popis algoritmu}{3}{}%
+\contentsline {paragraph}{}{3}{}%
 \contentsline {subsubsection}{\numberline {2.1.2}Funkcionalita algoritmu}{4}{}%
+\contentsline {paragraph}{}{4}{}%
 \contentsline {paragraph}{}{4}{}%
 \contentsline {subsubsection}{\numberline {2.1.3}Výhody a nevýhody algoritmu}{4}{}%
 \contentsline {paragraph}{}{4}{}%
 \contentsline {subsubsection}{\numberline {2.1.4}Využití algoritmu}{4}{}%
 \contentsline {paragraph}{}{4}{}%
-\contentsline {subsubsection}{\numberline {2.1.5}Implementace algoritmu}{4}{}%
+\contentsline {paragraph}{}{4}{}%
+\contentsline {subsubsection}{\numberline {2.1.5}Implementace algoritmu}{5}{}%
 \contentsline {subsection}{\numberline {2.2}Breadth First Search}{6}{}%
 \contentsline {subsubsection}{\numberline {2.2.1}Popis algoritmu}{6}{}%
 \contentsline {paragraph}{}{6}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Funkcionalita algoritmu}{6}{}%
-\contentsline {paragraph}{}{6}{}%
-\contentsline {subsubsection}{\numberline {2.2.3}Implementace algoritmu}{6}{}%
-\contentsline {subsection}{\numberline {2.3}Dijkstrův algoritmus}{8}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Popis algoritmu}{8}{}%
-\contentsline {paragraph}{}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Funkcionalita algoritmu}{7}{}%
+\contentsline {paragraph}{}{7}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}Výhody a nevýhody algoritmu}{7}{}%
+\contentsline {paragraph}{}{7}{}%
+\contentsline {subsubsection}{\numberline {2.2.4}Implementace algoritmu}{7}{}%
+\contentsline {subsection}{\numberline {2.3}Dijkstrův algoritmus}{9}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Popis algoritmu}{9}{}%
+\contentsline {paragraph}{}{9}{}%
 \contentsline {subsubsection}{\numberline {2.3.2}Funkcionalita algoritmu}{9}{}%
 \contentsline {paragraph}{}{9}{}%
 \contentsline {paragraph}{}{9}{}%
-\contentsline {paragraph}{}{9}{}%
-\contentsline {subsubsection}{\numberline {2.3.3}Implementace algoritmu}{9}{}%
+\contentsline {paragraph}{}{10}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}Implementace algoritmu}{10}{}%
 \contentsline {section}{\numberline {3}Aplikace}{12}{}%
 \contentsline {subsection}{\numberline {3.1}Využité technologie}{12}{}%
 \contentsline {subsubsection}{\numberline {3.1.1}Javascript}{12}{}%
 \contentsline {paragraph}{}{12}{}%
 \contentsline {paragraph}{}{12}{}%
 \contentsline {paragraph}{}{12}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}svelte}{12}{}%
-\contentsline {paragraph}{}{12}{}%
-\contentsline {paragraph}{}{12}{}%
-\contentsline {paragraph}{}{12}{}%
-\contentsline {subsection}{\numberline {3.2}Vizualizace}{12}{}%
-\contentsline {paragraph}{}{12}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}svelte}{13}{}%
+\contentsline {paragraph}{}{13}{}%
+\contentsline {paragraph}{}{13}{}%
+\contentsline {paragraph}{}{13}{}%
+\contentsline {subsection}{\numberline {3.2}Vizualizace}{13}{}%
+\contentsline {paragraph}{}{13}{}%
 \contentsline {paragraph}{}{13}{}%
 \contentsline {paragraph}{}{13}{}%
 \contentsline {section}{\numberline {4}Závěr}{14}{}%

@@ -49,22 +49,22 @@
 
 \section{Úvod}
 \paragraph{}
-Úvod do maturitní práce
 Cílem maturitní práce je podrobně popsat a realizovat vybrané problémy v oblasti 
-algoritmiky grefů zaměřených na prohledávání grafů.
+algoritmiky grafů zaměřených na prohledávání grafů.
 Tento maturitní projekt bude využit jako doprovodný studijní materiál předmětu 
 algoritmy, jehož cílem je seznámit studenty se základními principy 
 prohledávání grafů do hloubky, do šířky a vybraných algoritmických problémů. 
 Pro naplnění cílů této práce jsou teoreticky popsány principy fungování prohledávání do hloubky,
 Prohledávání do šírky a vyhledávání nejkratší cesty.
 \paragraph{}
-Praktická realizace celého projektu je navržena v programovacím jazyce javascript za pomocí compileru svelte
-, jehož kódová část je podrobně popsána jako součást dokumentace. Výstupem práce je webová stránka 
-s GUI rozhraním, které umožňuje uživateli (studentovi) výběr konkrétního algoritmu a jeho implementaci.
+Praktická realizace celého projektu je navržena v programovacím jazyce javascript za pomocí svelte
+, jehož kódová část je popsána jako součást dokumentace. Výstupem práce je webová stránka 
+s GUI rozhraním, které umožňuje uživateli (studentovi) výběr konkrétního algoritmu s ukázkou jeho implementace.
+
 \section{Úvod do grafů}
 \paragraph{}
 Grafy jsou matematické objekty, které se skládají z vrcholů a hran, které spojují tyto 
-vrcholy. Grafy se používají jako model pro mnoho různých situací v informatice a jiných 
+vrcholy. Grafy sou využívány jako model pro mnoho různých situací v informatice a jiných 
 oblastech, jako například počítačové sítě, telekomunikace a dopravní systémy.
 \paragraph{}
 Jedním z nejdůležitějších problémů v algoritmice grafů je nalezení nejkratší cesty mezi 
@@ -90,16 +90,24 @@ algoritmus, Edmonds-Karpův algoritmus nebo Dinicův algoritmus.
 \paragraph{}
 Algoritmus pro procházení grafu do hloubky (anglicky Depth-First Search) dále DFS
 je jedním ze základních algoritmů pro procházení grafů. Algoritmus DFS prochází 
-graf postupně z jednoho vrcholu do dalších, tak dlouho, dokud to bude možné. 
+graf postupně z jednoho vrcholu do dalších tak dlouho, dokud to bude možné. 
 Pokud narazí na vrchol, který již byl navštíven, algoritmus se vrátí zpět a pokračuje 
 v procházení grafu z jiného vrcholu.
+
 \subsubsection{Funkcionalita algoritmu}
 \paragraph{}
-Při procházení grafu DFS používá zásobník pro ukládání vrcholů, které budou následně 
-zpracovány. Na začátku se do zásobníku vloží počáteční vrchol grafu. Poté se postupně 
-vybírají vrcholy ze zásobníku a zpracovávají se. Při zpracování vrcholu se navštíví 
-všechny jeho následníky, kteří ještě nebyli navštíveni. Tyto následníky se poté vloží 
-na vrchol zásobníku a proces se opakuje. 
+Při jednom způsobu implementace algoritmu DFS se využívá zásobník (stack).Na začátku vybere jeden z vrcholů a 
+následně jej uloží do již navštívených-otevřených vrcholů. Z něho pokračuje na libovolný nenavštívený vrchol, 
+který následně opět přidá mezi již navštívené-otevřené vrcholy a takto pokračuje až do momentu, kdy 
+z aktuálního vrcholu nevede cesta k vrcholu doposud nenavštívenému. V tento moment se využije 
+backtracking a algoritmus označí aktuální vrchol za navštívený-uzavřený a posune se o jeden vrchol 
+„zpět“, kde hledá cestu k nenavštívenému vrcholu. Opakováním tohoto procesu projdeme postupně 
+všechny vrcholy grafu a vrátíme se do začátečního vrcholu.
+\paragraph{}
+Druhý způsob implementace algoritmu je za pomocí rekurze, při kterém algortmus začne v 
+počátečním vrcholu a zjistí všechny dostupné nenavštívené vrcholy. Po zjištení dostupných 
+nenavštívenýh vrcholu je stejný proces opakován na dostupných vrcholech, dokud algoritmus 
+neprojde celý dostupný graf.
 \subsubsection{Výhody a nevýhody algoritmu}
 \paragraph{}
 Algoritmus DFS je velmi jednoduchý a intuitivní, ale má několik nevýhod. Jednou z 
@@ -107,9 +115,15 @@ nevýhod je, že může být velmi pomalý pro grafy s mnoha vrcholy a hranami. 
 vést k rekurzivnímu zanořování a potenciálně k překročení maximální hloubky rekurze.
 \subsubsection{Využití algoritmu}
 \paragraph{}
-DFS se využívá v mnoha xxx(grafech). Například pro vyhledávání cesty v orientovaných grafech či stromových strukturých.
+DFS algoritmus je implementován v mnoha řešeních v oblasti informatiky obsahujíci grafy. 
+Využívá se například pro: Topologické uspořádání uzlu. Pokaždé, kdy označíme uzel za uzavřený, 
+uložíme jej do  zásobníků a tímto vytvoříme topologické uspořádání uzlů.
+\paragraph{}
+Dále se využívá například k určení acykličnosti grafu. Při prohledávání grafu můžeme kontrolovat zpětné hrany (hrany 
+vedoucí do vrcholu navštíveného-otevřeného). Pokud se žádná hrana vyjma hrany příchozí 
+nevyskytuje, je graf acyklický.
 
-
+\newpage
 \subsubsection{Implementace algoritmu}
 \begin{lstlisting}
 using System;
@@ -189,16 +203,27 @@ public class Graph
 \subsection{Breadth First Search}
 \subsubsection{Popis algoritmu}
 \paragraph{}
-Prohledávání grafu do šířky (anglicky Breadth-First Search, zkráceně BFS) je algoritmus 
+Prohledávání grafu do šířky (anglicky Breadth-First Search) dále BFS je algoritmus 
 pro prohledávání grafů, který postupuje systematicky a rozšiřuje průzkum postupně po 
-vrstvách, tedy nejprve navštíví všechny sousedy zdrojového vrcholu, poté všechny sousedy 
+vrstvách. Tedy nejprve navštíví všechny sousedy zdrojového vrcholu, poté všechny sousedy 
 sousedů a tak dále. Algoritmus je založen na principu prohledávání grafu pomocí fronty.
 \subsubsection{Funkcionalita algoritmu}
 \paragraph{}
-BFS začíná v zadaném vrcholu a postupně prochází všechny jeho sousedy. Tyto sousedy 
-vloží do fronty, aby se prohledaly v následujícím kroku. Následně se vezme první vrchol 
-z fronty a opakuje se proces pro všechny jeho sousedy, kteří nebyli navštíveni. Postup se 
-opakuje, dokud fronta není prázdná.
+Bfs začíná v zadaném vrcholu grafu a postupně prochází všechny sousedy tohoto vrcholu. 
+Všechny sousední vrcholy vloží do fronty, aby je bylo možné prohledat v následujícím kroku 
+a sem je uložen mezi již prohledané vrcholy. Po uložení všech sousedních vrcholu pokračuje 
+algoritmus se stejným postupem na vrcholy uložené ve frontě a postupně tím frontu k vyřešení 
+zkracuje tím, že již vyřešené vrcholy ukládá do fronty již zpracovaných vrcholů. Tento proces 
+se opakuje, dokud se nacházejí nenavštívené sousední vrcholy grafu.
+
+\subsubsection{Výhody a nevýhody algoritmu}
+\paragraph{}
+BFS algoritmus vyniká tím, že s jistotou najde řešení zadaného grafu, pokud je graf řešitelný.
+Pokud má graf více možných řešení, BFS vždy najde řešení s nejmenším počtem kroku. Spolehlivost 
+se ovšem musí odrazit na jiném aspektu algoritmu a to je jeho využití paměti. Ukládáním veškerých 
+vrcholu k projití a již vyřešených vrcholů do fronty využívá BFS algoritmus více paměti oproti ostatním algoritmům
+na procházení grafů. Zároveň při procházení velkých grafů může být časově náročnější.
+
 \subsubsection{Implementace algoritmu}
 
 \begin{lstlisting}
