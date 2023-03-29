@@ -16,6 +16,8 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
+\setlength{\parindent}{0pt}
+
 \lstdefinelanguage{JavaScript}{
   morekeywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
   morecomment=[s]{/*}{*/},
@@ -78,11 +80,15 @@ uvedené literatury.}
 
 \hspace{9.5cm} Martin Klíma
 \clearpage
+\noindent{\Large{\bfseries{Poděkování}}}\\
+\noindent{Chtěl bych poděkovat Mgr. Josefu Horálkovi, Ph.D. za odborné vedení maturitního projektu
+a dodání potřebných studijních materiálů.}
+\clearpage
 \tableofcontents
 \newpage
 
 \section{Úvod}
-\paragraph{}
+
 Cílem maturitní práce je podrobně popsat a realizovat vybrané problémy v oblasti 
 algoritmiky grafů zaměřených na prohledávání grafů.
 Tento maturitní projekt bude využit jako doprovodný studijní materiál předmětu 
@@ -90,39 +96,46 @@ algoritmy, jehož cílem je seznámit studenty se základními principy
 prohledávání grafů do hloubky, do šířky a vybraných algoritmických problémů. 
 Pro naplnění cílů této práce jsou teoreticky popsány principy fungování prohledávání do hloubky,
 prohledávání do šírky a vyhledávání nejkratší cesty.
-\paragraph{}
-Praktická realizace celého projektu je navržena v programovacím jazyce javascript za pomocí svelte
-, jehož kódová část je popsána jako součást dokumentace. Výstupem práce je webová stránka 
-s GUI rozhraním, které umožňuje uživateli (studentovi) výběr konkrétního algoritmu s ukázkou jeho implementace.
+\\
 
-\section{Úvod do grafů}
-\paragraph{}
+Praktická realizace celého projektu je navržena v programovacím jazyce javascript za pomocí svelte. 
+Výstupem práce je webová stránka s GUI rozhraním, které umožňuje uživateli (studentovi) výběr konkrétního 
+algoritmu s ukázkou jeho implementace.
+
+\clearpage
+
+\section{Teorie}
+\subsection{Úvod do grafů}
 Grafy jsou matematické objekty, které se skládají z vrcholů a hran, které spojují tyto 
 vrcholy. Grafy sou využívány jako model pro mnoho různých situací v informatice a jiných 
 oblastech, jako například počítačové sítě, telekomunikace a dopravní systémy.
-\paragraph{}
+\\
+
 Jedním z nejdůležitějších problémů v algoritmice grafů je nalezení nejkratší cesty mezi 
 dvěmi vrcholy. Tento problém se řeší pomocí různých algoritmů, jako například Dijkstrův 
 algoritmus, Bellman-Fordův algoritmus nebo algoritmus Floyd-Warshall. Tyto algoritmy 
 pracují s váženými grafy, kde každá hrana má určitou váhu (hodnotu).
-\paragraph{}
+\\
+
 Dalším důležitým problémem v algoritmice grafů je hledání minimální kostry grafu. Minimální 
 kostra grafu je podgraf grafu, který obsahuje všechny vrcholy grafu a zároveň má nejmenší 
 součet vah (hodnot) hran. Tento problém se řeší pomocí algoritmů jako Kruskalův algoritmus nebo Primův 
 algoritmus. Minimální kostra grafu se často využivá v počítačových sítích pro zajištění redundance
 a integrity v rozsáhlejších sítích za pomocí spanning tree.
-\paragraph{}
+\\
+
 Grafy jsou v informatice často používány jako model pro sítě. Sítě mohou být fyzické nebo 
 logické, a grafy poskytují užitečný nástroj pro modelování a analýzu různých vlastností sítí.
-\paragraph{}
+\\
+
 Důležitou vlastností sítí je maximální tok, což je maximální množství, které může být přeneseno 
 sítí mezi dvěma uzly v daném čase. Tento problém se řeší pomocí algoritmů jako Ford-Fulkersonův 
 algoritmus, Edmonds-Karpův algoritmus nebo Dinicův algoritmus.
-\newpage
+~\cite{GeeksforGeeks: Algorithms}
+\clearpage
 
 \subsection{Depth First Search}
 \subsubsection{Popis algoritmu}
-\paragraph{}
 Algoritmus pro procházení grafů do hloubky (anglicky Depth-First Search) dále DFS
 je jedním ze základních algoritmů pro procházení grafů. Algoritmus DFS prochází 
 graf postupně z jednoho vrcholu do dalších tak dlouho, dokud to bude možné. 
@@ -131,7 +144,6 @@ v procházení grafu z jiného vrcholu.
 ~\cite{GeeksforGeeks: DFS,Khan Academy: DFS}
 
 \subsubsection{Funkcionalita algoritmu}
-\paragraph{}
 Při jednom způsobu implementace algoritmu DFS se využívá zásobník (stack).Na začátku vybere jeden z vrcholů a 
 následně jej uloží do již navštívených-otevřených vrcholů. Z něho pokračuje na libovolný nenavštívený vrchol, 
 který následně opět přidá mezi již navštívené-otevřené vrcholy a takto pokračuje až do momentu, kdy 
@@ -139,8 +151,8 @@ z aktuálního vrcholu nevede cesta k vrcholu doposud nenavštívenému. V tento
 backtracking a algoritmus označí aktuální vrchol za navštívený-uzavřený a posune se o jeden vrchol 
 „zpět“, kde hledá cestu k nenavštívenému vrcholu. Opakováním tohoto procesu projdeme postupně 
 všechny vrcholy grafu a vrátíme se do začátečního vrcholu.
+\\
 
-\paragraph{}
 Druhý způsob implementace algoritmu je za pomocí rekurze, při kterém algoritmus začne v 
 počátečním vrcholu a zjistí všechny dostupné nenavštívené vrcholy. Po zjištení dostupných 
 nenavštívených vrcholů je stejný proces opakován na dostupných vrcholech, dokud algoritmus 
@@ -148,23 +160,21 @@ neprojde celý dostupný graf.
 ~\cite{GeeksforGeeks: DFS,Khan Academy: DFS}
 
 \subsubsection{Výhody a nevýhody algoritmu}
-\paragraph{}
 Algoritmus DFS je velmi jednoduchý a intuitivní, ale má několik nevýhod. Jednou z 
 nevýhod je, že může být velmi pomalý pro grafy s mnoha vrcholy a hranami. Dále může 
 vést k rekurzivnímu zanořování a potenciálně k překročení maximální hloubky rekurze.
 
+
 \subsubsection{Využití algoritmu}
-\paragraph{}
 DFS algoritmus je implementován v mnoha řešeních v oblasti informatiky obsahující grafy. 
 Využívá se například pro topologické uspořádání uzlu. Pokaždé, když označíme uzel za uzavřený, 
 uložíme jej do zásobníků a tímto vytvoříme topologické uspořádání uzlů.
-\paragraph{}
 Dále se využívá například k určení acykličnosti grafu. Při prohledávání grafu můžeme kontrolovat zpětné hrany (hrany 
 vedoucí do vrcholu navštíveného-otevřeného). Pokud se žádná hrana vyjma hrany příchozí 
 nevyskytuje, je graf acyklický.
 
 \newpage
-\subsubsection{Implementace algoritmu}
+\subsubsection{Ukázka implementace algoritmu}
 \begin{lstlisting}
 using System;
 using System.Collections.Generic;
@@ -239,18 +249,17 @@ public class Graph
     }
 }
 \end{lstlisting}
+~\cite{GeeksforGeeks: DFS}
 \clearpage
 
 \subsection{Breadth First Search}
 \subsubsection{Popis algoritmu}
-\paragraph{}
 Prohledávání grafu do šířky (anglicky Breadth-First Search) dále BFS je algoritmus 
 pro prohledávání grafů, který postupuje systematicky a rozšiřuje průzkum postupně po 
 vrstvách. Tedy nejprve navštíví všechny sousedy zdrojového vrcholu, poté všechny sousedy 
 sousedů a tak dále. Algoritmus je založen na principu prohledávání grafu pomocí fronty.
 
 \subsubsection{Funkcionalita algoritmu}
-\paragraph{}
 BFS začíná v zadaném vrcholu grafu a postupně prochází všechny sousedy tohoto vrcholu. 
 Všechny sousední vrcholy vloží do fronty, aby je bylo možné prohledat v následujícím kroku 
 a sem je uložen mezi již prohledané vrcholy. Po uložení všech sousedních vrcholů pokračuje 
@@ -259,7 +268,6 @@ zkracuje tím, že již vyřešené vrcholy ukládá do fronty již zpracovanýc
 se opakuje, dokud jsou nacházeny nenavštívené sousední vrcholy grafu.
 
 \subsubsection{Výhody a nevýhody algoritmu}
-\paragraph{}
 BFS algoritmus vyniká tím, že s jistotou najde řešení zadaného grafu, pokud je graf řešitelný.
 Pokud má graf více možných řešení, BFS vždy najde řešení s nejmenším počtem kroků. Spolehlivost 
 se ovšem musí odrazit na jiném aspektu algoritmu a to je jeho využití paměti. Ukládáním veškerých 
@@ -267,7 +275,6 @@ vrcholů k projití a již vyřešených vrcholů do fronty využívá BFS algor
 na procházení grafů. Zároveň při procházení velkých grafů může být časově náročnější.
 
 \subsubsection{Využití algoritmu}
-\paragraph{}
 BFS algoritmus nalezne využití v mnoha případech jako DFS algoritmus. Jeho odlišným průchodem grafu se ovšem hodí 
 pro jiná využití než prohledávání do hloubky. Využití BFS algoritmu je například v Peer to Peer sítích, kde se 
 využívá pro nalezení všech sousedních uzlů, například v Torrentové síti. Další využití nalezne v sociálních sítích,
@@ -277,7 +284,7 @@ veškeré dostupné odkazy na jiné stránky a následně opakovat pro každou n
 lze využít i DFS algoritmus, ovšem zde se projevuje výhoda BFS algoritmu, který postupuje postupně po úrovních a tím pádem 
 je možné snáze nastavit hloubku prohledávání.
 
-\subsubsection{Implementace algoritmu}
+\subsubsection{Ukázka implementace algoritmu}
 
 \begin{lstlisting}
 using System;
@@ -361,24 +368,24 @@ public class BFS
     }
 }
 \end{lstlisting}
+~\cite{GeeksforGeeks: BFS}
 \clearpage
 
 \subsection{Dijkstrův algoritmus}
 \subsubsection{Popis algoritmu}
-\paragraph{}
 Dijkstrův algoritmus je zaměřený na vyhledávání nejkratší cesty v váženém grafu. Algoritmus 
 vyhledává nejkratší cestu ze zvoleného počátečního uzlu do všech ostatních uzlů v grafu s 
 ohledem na váhu (hodnotu) hran mezi nimi. Algoritmus jepoujmenován po nizozemském vědci 
 Edsgeru W. Dijkstrovi, který ho popsal v roce 1959.
 
 \subsubsection{Funkcionalita algoritmu}
-\paragraph{}
 Dijkstrův algoritmus je založen na principu postupného procházení grafu, přičemž pro každý 
 uzel uchovává nejkratší známou cestu z počátečního uzlu. Algoritmus se řídí principem tzv. 
 "hladového algoritmu" (angl. greedy algorithm), kdy v každé iteraci vybírá z nezpracovaných 
 uzlů ten s nejmenší dosud známou vzdáleností od počátečního uzlu.
-\paragraph{}
+
 Postup algoritmu je následující:
+
 \begin{enumerate}
     \item Nejprve se inicializuje graf a počáteční uzel. Pro každý uzel se uchovává jeho 
     dosud nejkratší vzdálenost od počátečního uzlu, pro počáteční uzel se nastaví tato 
@@ -395,13 +402,12 @@ Postup algoritmu je následující:
     \item Postup se opakuje, dokud nejsou zpracovány všechny uzly, pro které existuje 
     cesta z počátečního uzlu.
 \end{enumerate}
-\paragraph{}
 Na konci algoritmu jsou tedy pro každý uzel grafu známy jeho nejkratší vzdálenosti od 
 počátečního uzlu, což umožňuje nalezení nejkratší cesty z počátečního uzlu do kteréhokoliv 
 jiného uzlu v grafu.
 
+
 \subsubsection{Výhody a nevýhody algoritmu}
-\paragraph{}
 Výhodou Dijkstrova algoritmu je jeho univerzálnost. Jelikož algoritmus nepotřebuje znát 
 cílový uzel, je možné ho použít pro vyhledávání nejkratší cesty z jednoho uzlu do všech 
 ostatních uzlů v grafu, proto je vhodný pro řešení úloh, kde je více cílových uzlů a je 
@@ -409,14 +415,13 @@ zapotřebí určit nejbližší uzel. Nevýhodou algoritmu je jeho nepoužitelno
 negativními váhami hran.
 
 \subsubsection{Využití algoritmu}
-\paragraph{}
 Djikstrlv algoritmus se využívá v navigačních systémech, kde je potřeba určit nejkratší cestu 
 mezi dvěma body na mapě. Dále se využívá v systémech pro plánování letů, kde je potřeba určit 
 nejkratší cestu mezi letišti. Algoritmus také nachází uplatnění v počítačových sítích, kde se 
 využívá k určení nejkratší cesty mezi dvěma routery v síti pro přenos dat. Další využití 
 tohoto algoritmu je ve videohrách, kde se využívá k určení trasy pro nehráčské postavy po světě.
 
-\subsubsection{Implementace algoritmu}
+\subsubsection{Ukázka implementace algoritmu}
 \begin{lstlisting}
 using System;
 
@@ -508,6 +513,7 @@ public static void Main()
     }
 }
 \end{lstlisting}
+\clearpage
 \section{Aplikace}
 \subsection{Využité technologie}
 \begin{enumerate}
@@ -515,58 +521,59 @@ public static void Main()
     \item Svelte
 \end{enumerate}
 \subsubsection{Javascript}
-\paragraph{}
 JavaScript je vysokoúrovňový, interpretovaný programovací jazyk používaný pro tvorbu interaktivních 
 webových stránek a webových aplikací. Byl vyvinut firmou Netscape v roce 1995.
-\paragraph{}
+\\
+
 Jazyk JavaScript je objektově orientovaný, což znamená, že se v něm pracuje s objekty a metodami, 
 které se používají k interakci s HTML a CSS stránkou a ke změně a přizpůsobení obsahu stránky. 
 Jazyk podporuje mnoho programovacích konstrukcí, jako jsou podmínky, cykly, funkce, pole a další.
-\paragraph{}
+\\
+
 JavaScript běží na straně klienta (v prohlížeči) a na straně serveru (např. s pomocí Node.js). Na 
 straně klienta umožňuje JavaScript vytvářet interaktivní prvky na stránce, jako jsou například 
 animace, změna velikosti a polohy elementů, validace formulářů a další. Na straně serveru umožňuje 
 JavaScript vytvářet dynamické webové stránky, komunikovat s databázemi a provádět další funkce.
 
 \subsubsection{Svelte}
-\paragraph{}
 Svelte je zaměřen na kompilaci a generování kódu během vývoje aplikace. To znamená, že místo toho, 
 aby se spouštěl při běhu aplikace, jako je tomu u jiných frameworků jako React nebo Vue, Svelte 
 generuje čistý, optimalizovaný JavaScript, který je rychlejší a menší.
-\paragraph{}
+\\
+
 Vanilla Svelte se vyznačuje tím, že neobsahuje žádné externí knihovny nebo balíčky, které by 
 byly nainstalovány závislostmi, jako je například routování, správa stavu nebo stylování. Místo 
 toho musí vývojáři ručně napsat kód pro tyto funkcionality.
-\paragraph{}
-Přestože je Vanilla Svelte základní verzí frameworku, stále nabízí výhody, jako je rychlost, 
-jednoduchost a menší velikost souborů.
 
+\clearpage
 \subsection{Vizualizace}
-\paragraph{}
 Pro vizualizaci a zadávání grafů byl využit html element canvas. Oproti 
 canvasu v jiných jazycích (frameworcích) má canvas v html značnou nevýhodu
 pro toto využití. Například v C\# WPF se na canvas přidávají jednotlivé objekty
 a je možné k nim následně přistupovat a pracovat s nimi. Takovouto možnost html 
 canvas nenabízí, jelikož html canvas nezaznamenává jednotlivé objekty, ale pouze
-vybarvené pixely. \par
-\paragraph{}
+vybarvené pixely.
+\\
+
 Proto bylo zapotřebí přijít s řešením pro interakci s prvky grafu bez využití
-interaktivních funkcí jednotlivých objektů jako například v C\# WPF. \par
-\paragraph{}
+interaktivních funkcí jednotlivých objektů jako například v C\# WPF.
+\\
+
 Toto řešení se zakládá na zaznamenávání polohy kliknutí a následné kontrole, zda
 se v dané oblasti nachází interaktivní prvek, či ne. Samotný kód pro toto řešení
 je vcelku jednoduchý, jelikož se jedná pouzo o cyklus procházející vykrelené prvky
-a složenou podmínku kontrolující polohu vůči souřadnicím kliknutí. \par
-    \begin{lstlisting}
-        elements.forEach((element) => {
-            if (
-                y > element.top - element.height*2 &&
-                y < element.top + element.height*2 &&
-                x > element.left - element.width*2 &&
-                x < element.left + element.width*2
-            )
-    \end{lstlisting}
+a složenou podmínku kontrolující polohu vůči souřadnicím kliknutí.
 
+\begin{lstlisting}
+    elements.forEach((element) => {
+        if (
+            y > element.top - element.height*2 &&
+            y < element.top + element.height*2 &&
+            x > element.left - element.width*2 &&
+            x < element.left + element.width*2
+        )
+\end{lstlisting}
+\subsubsection{Vykreslování cest}
 Jedna z dalších překážek vycházela opět z toho, že si canvas zaznamenává pouze
 vybarvená místa a proto není možné jednotlivým prvkům určovat "výšku" \\ umístění
 oproti ostatním prvkům na plátně. Proto není možné umístit cesty mezi vrcholy
@@ -576,34 +583,34 @@ Neustálé vykreslování plátna by mohlo být zbytečně zátěžné, proto by
 geometrie pro výpočet průsečíků cesty s okrajem kružnice
 značící vrchol grafu.\par
 \begin{lstlisting}
-        let dx = lineEndX - lineStartX;
-            let dy = lineEndY - lineStartY;
-            let length = Math.sqrt(dx * dx + dy * dy);
-            if (length > 0){
-                dx /= length;
-                dy /= length;
-            }
-            dx *= length - 25;
-            dy *= length - 25;
+    let dx = lineEndX - lineStartX;
+        let dy = lineEndY - lineStartY;
+        let length = Math.sqrt(dx * dx + dy * dy);
+        if (length > 0){
+            dx /= length;
+            dy /= length;
+        }
+        dx *= length - 25;
+        dy *= length - 25;
 
-            lineEndX = lineStartX + dx
-            lineEndY = lineStartY + dy
+        lineEndX = lineStartX + dx
+        lineEndY = lineStartY + dy
 
-            dx = lineStartX - lineEndX;
-            dy = lineStartY - lineEndY;
-            length = Math.sqrt(dx*dx+dy*dy)
-            if (length > 0){
-                dx /= length;
-                dy /= length;
-            }
-            dx *= length - 25;
-            dy *= length - 25;
+        dx = lineStartX - lineEndX;
+        dy = lineStartY - lineEndY;
+        length = Math.sqrt(dx*dx+dy*dy)
+        if (length > 0){
+            dx /= length;
+            dy /= length;
+        }
+        dx *= length - 25;
+        dy *= length - 25;
 
-            lineStartX = lineEndX + dx
-            lineStartY = lineEndY + dy
+        lineStartX = lineEndX + dx
+        lineStartY = lineEndY + dy
 \end{lstlisting}
 
-Pro vizualizaci průchodu grafu je nutné znovu vykreslovat plátno pro kažný 
+Pro vizualizaci průchodu grafu je nutné znovu vykreslovat plátno pro každý 
 "snímek", což sice není nejhezčí řešení, ovšem html canvas jiné nenabízí.
 Jako časovač pro oddělaní kroků průchodu grafu byla využita funkce setInterval(),
 která po zadaném intervalu volá přidělenou funkci, dokud není zastavena. Při každném
@@ -611,8 +618,9 @@ kroku animace se smaže plátno, podle pořadí průchodu grafu se určí dalš�
 vrchol, kterému se změní barva pro vykreslení a následně se plátno vykreslí. Tento
 proces se opakuje dokud neprojde veškeré procházené prvky a poté zastaví interval.
 
+\clearpage
 \section{Závěr}
-
+\clearpage
 \section{Literatura}
 \begin{thebibliography}{99}
     \bibitem{GeeksforGeeks: Algorithms}
@@ -624,20 +632,35 @@ proces se opakuje dokud neprojde veškeré procházené prvky a poté zastaví i
     Lessons Practice [online]. Copyright © 2023 Khan Academy [cit. 16.03.2023]. Dostupné z: https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs
     % DFS
     \bibitem{GeeksforGeeks: DFS}
-    Depth First Search or DFS for a Graph - GeeksforGeeks. GeeksforGeeks | A computer science portal for geeks [online]. Dostupné z: https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+    Depth First Search or DFS for a Graph - GeeksforGeeks. GeeksforGeeks | A computer science portal for geeks [online].[cit. 16.03.2023] Dostupné z: https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
     
     \bibitem{Brilliant: DFS}
-    Depth-First Search (DFS) | Brilliant Math and Science Wiki. Brilliant | Learn interactively [online]. Dostupné z: https://brilliant.org/wiki/depth-first-search-dfs/
+    Depth-First Search (DFS) | Brilliant Math and Science Wiki. Brilliant | Learn interactively [online].[cit. 16.03.2023] Dostupné z: https://brilliant.org/wiki/depth-first-search-dfs/
 
     % BFS
     \bibitem{GeeksforGeeks: BFS}
-    Breadth First Search or BFS for a Graph - GeeksforGeeks. GeeksforGeeks | A computer science portal for geeks [online]. Dostupné z: https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+    Breadth First Search or BFS for a Graph - GeeksforGeeks. GeeksforGeeks | A computer science portal for geeks [online].[cit. 16.03.2023] Dostupné z: https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
 
     \bibitem{Brilliant: BFS}
-    Breadth-First Search (BFS) | Brilliant Math and Science Wiki. Brilliant | Learn interactively [online]. Dostupné z: https://brilliant.org/wiki/breadth-first-search-bfs/
+    Breadth-First Search (BFS) | Brilliant Math and Science Wiki. Brilliant | Learn interactively [online].[cit. 19.03.2023] Dostupné z: https://brilliant.org/wiki/breadth-first-search-bfs/
 
     \bibitem{khanacademy: BFS}
     Breadth-first search and its uses (article) | Khan Academy. Khan Academy | Free Online Courses, Lessons and Practice [online]. Copyright © 2023 Khan Academy [cit. 16.03.2023]. Dostupné z: https://www.khanacademy.org/computing/computer-science/algorithms/breadth-first-search/a/breadth-first-search-and-its-uses
+
+    \bibitem{GeeksforGeeks: Dijkstra}
+    Dijkstra’s Algorithm for a Graph - GeeksforGeeks. GeeksforGeeks | A computer science portal for geeks [online].[cit. 27.03.2023] Dostupné z: https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+
+    \bibitem{programiz: Dijkstra}
+    Dijkstra's algorithm. Programiz. (n.d.). [cit. 27.03.2023] dostupné z: https://www.programiz.com/dsa/dijkstra-algorithm 
+
+    \bibitem{Svelte docs}
+    Svelte docs. Docs • Svelte. (n.d.). [cit. 27.03.2023] dostupné z: https://svelte.dev/docs 
+
+    \bibitem{}
+    JavaScript docs. MDN. (n.d.). [cit. 27.03.2023] dostupné z: https://developer.mozilla.org/en-US/docs/Web/JavaScript 
+
+
+
 \end{thebibliography}
 
 \end{document}
