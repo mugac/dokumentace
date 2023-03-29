@@ -6,7 +6,7 @@
 \usepackage[czech]{babel}
 \usepackage{listings}
 \usepackage{xcolor}
-
+\usepackage{pdfpages}
 \usepackage[top=3cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
 
 \definecolor{light-gray}{gray}{0.90}
@@ -37,15 +37,47 @@
     showstringspaces=false
 }
 
-\title{Algoritmika grafů}
-\author{Martin Klíma}
-\date{2022-2023}
-
 \begin{document}
+    \begin{titlepage}
+        \bfseries{
+            \begin{center}
+                \Large{DELTA – Střední škola informatiky a ekonomie, Základní škola a Mateřská škola
+                s.r.o.
+                \newline
+                Ke Kamenci 151, PARDUBICE}
+                \vspace{0.4 \textheight}\\
+                \large{
+                    MATURITNÍ PROJEKT
+                }\\
+                \vspace{14pt}
+                \LARGE{
+                    Řešení vybraných problémů algoritmiky grafů
+                }
+                \vspace{0.3 \textheight}
+            \end{center}
+        \noindent\large{Martin Klíma}\\
+        \noindent\large{4.B}\\
+        \noindent\large{Informační technologie 18-20-M/01}\\
+        \noindent\large{2022/2023}\\
+        }
+  \end{titlepage}
+\clearpage
 
-\maketitle
-\newpage
+\includepdf{files/Zadani.pdf}
+\clearpage
+% prohlášení
+\vspace*{0.8\textheight}
+\noindent{\Large{\bfseries{Prohlášení}}}
 
+\noindent{Prohlašuji, že jsem maturitní projekt vypracoval(a) samostatně, výhradně s použitím
+uvedené literatury.}
+
+\vspace{20pt}
+
+\noindent V Pardubicích 31.3.2023 \hspace{150pt}\dotfill{}\hspace{\stretch{0.5}}
+
+\hspace{9.5cm} Martin Klíma
+\clearpage
 \tableofcontents
 \newpage
 
@@ -96,7 +128,7 @@ je jedním ze základních algoritmů pro procházení grafů. Algoritmus DFS pr
 graf postupně z jednoho vrcholu do dalších tak dlouho, dokud to bude možné. 
 Pokud narazí na vrchol, který již byl navštíven, algoritmus se vrátí zpět a pokračuje 
 v procházení grafu z jiného vrcholu.
-\cite{GeeksforGeeks: DFS,Khan Academy: DFS}
+~\cite{GeeksforGeeks: DFS,Khan Academy: DFS}
 
 \subsubsection{Funkcionalita algoritmu}
 \paragraph{}
@@ -113,7 +145,7 @@ Druhý způsob implementace algoritmu je za pomocí rekurze, při kterém algori
 počátečním vrcholu a zjistí všechny dostupné nenavštívené vrcholy. Po zjištení dostupných 
 nenavštívených vrcholů je stejný proces opakován na dostupných vrcholech, dokud algoritmus 
 neprojde celý dostupný graf.
-\cite{GeeksforGeeks: DFS,Khan Academy: DFS}
+~\cite{GeeksforGeeks: DFS,Khan Academy: DFS}
 
 \subsubsection{Výhody a nevýhody algoritmu}
 \paragraph{}
