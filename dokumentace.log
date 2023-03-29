@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2023.3.23)  29 MAR 2023 09:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.12)  29 MAR 2023 09:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/dokumentace/23B/dokumentace.tex
-(d:/dokumentace/23B/dokumentace.tex
+**/home/kacis/Projects/klimma/dokumentace/dokumentace.tex
+(/home/kacis/Projects/klimma/dokumentace/dokumentace.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -22,34 +22,28 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/cmap\cmap.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
 Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-<<t1.cmap>>) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2022/02/26 3.73 The Babel package
+<<t1.cmap>>) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count193
 \U@D=\dimen139
-\l@unhyphenated=\language79
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\l@unhyphenated=\language47
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count194
-
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/babel-czech\czech.ldf
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-czech/czech.ldf
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
 Package babel Info: Making " an active character on input line 172.
 \cs@wordlen=\count195
 Package babel Info: Making - an active character on input line 226.
-)) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
 )
@@ -65,22 +59,22 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \lst@newlines=\count266
 \lst@lineno=\count267
 \lst@maxwidth=\dimen143
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count268
 \lst@skipnumbers=\count269
 \lst@framebox=\box51
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
@@ -92,11 +86,11 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
-Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count270
 \calc@Bcount=\count271
@@ -108,17 +102,17 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count272
 \calc@Cskip=\skip51
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
-Package: eso-pic 2023/03/23 v3.0b eso-pic (RN)
+) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen146
 \ESO@tempdimb=\dimen147
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
@@ -129,23 +123,22 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \AM@pagewidth=\dimen150
 \AM@pageheight=\dimen151
 \AM@fboxrule=\dimen152
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
-File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
+ (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count273
 \AM@pagebox=\box52
 \AM@global@opts=\toks20
 \AM@pagecnt=\count274
 \AM@toc@title=\toks21
-\AM@lof@heading=\toks22
 \c@AM@survey=\count275
 \AM@templatesizebox=\box53
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count276
 \Gm@cntv=\count277
@@ -158,14 +151,14 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutheight=\dimen158
 \Gm@layouthoffset=\dimen159
 \Gm@layoutvoffset=\dimen160
-\Gm@dimlist=\toks23
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+\Gm@dimlist=\toks22
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count279
 \l__pdf_internal_box=\box54
-) (dokumentace.aux)
+) (./dokumentace.aux)
 \openout1 = `dokumentace.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -183,56 +176,30 @@ LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 \c@lstlisting=\count280
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count281
 \scratchdimen=\dimen161
 \scratchbox=\box55
 \nofMPsegments=\count282
 \nofMParguments=\count283
-\everyMPshowfont=\toks24
+\everyMPshowfont=\toks23
 \MPscratchCnt=\count284
 \MPscratchDim=\dimen162
 \MPnumerator=\count285
 \makeMPintoPDFobject=\count286
-\everyMPtoPDFconversion=\toks25
-) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+\everyMPtoPDFconversion=\toks24
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
-Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
-
-C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty:47: Undefined control sequence.
-<argument> \IfDocumentMetadataTF 
-                                 {}{\RequirePackageWithOptions {pdflscape-no...
-l.47 ...ePackageWithOptions{pdflscape-nometadata}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
-Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
- (C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
-C:\Users\Martin\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty:47: Undefined control sequence.
-<argument> ...e-nometadata}}\IfDocumentMetadataTF 
-                                                  {}{\endinput }
-l.47 ...ePackageWithOptions{pdflscape-nometadata}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -275,10 +242,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--63
 
 [1
 
-{C:/Users/Martin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 pdfTeX warning: pdflatex (file ./files/Zadani.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<files/Zadani.pdf, id=9, 597.53635pt x 845.04686pt>
+<files/Zadani.pdf, id=10, 597.53635pt x 845.04686pt>
 File: files/Zadani.pdf Graphic file (type pdf)
 <use files/Zadani.pdf>
 Package pdftex.def Info: files/Zadani.pdf  used on input line 66.
@@ -296,7 +263,7 @@ pdfTeX warning: pdflatex (file ./files/Zadani.pdf): PDF inclusion: found PDF ver
 
 
 pdfTeX warning: pdflatex (file ./files/Zadani.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<files/Zadani.pdf, id=12, page=1, 597.53635pt x 845.04686pt>
+<files/Zadani.pdf, id=13, page=1, 597.53635pt x 845.04686pt>
 File: files/Zadani.pdf Graphic file (type pdf)
 <use files/Zadani.pdf, page 1>
 Package pdftex.def Info: files/Zadani.pdf , page1 used on input line 66.
@@ -321,27 +288,21 @@ Package pdftex.def Info: files/Zadani.pdf , page1 used on input line 66.
 
  <./files/Zadani.pdf>] [2
 
-]
-No file dokumentace.toc.
+] (./dokumentace.toc<<ot1.cmap>><<oml.cmap>><<oms.cmap>>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 11.
+<<omx.cmap>>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 11.
+)
 \tf@toc=\write3
 \openout3 = `dokumentace.toc'.
 
-[3
+ [3
 
-] [4]
-
-LaTeX Warning: Citation `GeeksforGeeks: DFS' on page 5 undefined on input line 131.
-
-
-LaTeX Warning: Citation `Khan Academy: DFS' on page 5 undefined on input line 131.
-
-
-LaTeX Warning: Citation `GeeksforGeeks: DFS' on page 5 undefined on input line 148.
-
-
-LaTeX Warning: Citation `Khan Academy: DFS' on page 5 undefined on input line 148.
-
-[5] [6] [7] [8
+] [4] [5] [6] [7] [8
 
 ] [9] [10] [11
 
@@ -355,26 +316,20 @@ Underfull \hbox (badness 7273) in paragraph at lines 634--635
 \T1/cmr/m/n/12 for-Ge-eks | A com-pu-ter science por-tal for ge-eks [on-line]. Do-stupné z:
  []
 
-[17] (dokumentace.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[17] (./dokumentace.aux) ) 
 Here is how much of TeX's memory you used:
- 6407 strings out of 478582
- 98625 string characters out of 2843872
- 731016 words of memory out of 3000000
- 24524 multiletter control sequences out of 15000+600000
- 475300 words of font info for 37 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 70i,17n,76p,372b,1660s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\Martin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Martin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Martin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Martin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\Martin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Martin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
-Output written on dokumentace.pdf (18 pages, 168164 bytes).
+ 6410 strings out of 479415
+ 96387 string characters out of 5870760
+ 728075 words of memory out of 5000000
+ 24346 multiletter control sequences out of 15000+600000
+ 477738 words of font info for 45 fonts, out of 8000000 for 9000
+ 428 hyphenation exceptions out of 8191
+ 70i,17n,76p,393b,1660s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/kacis/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/kacis/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/kacis/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/kacis/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/kacis/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/kacis/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk>
+Output written on dokumentace.pdf (18 pages, 155716 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
