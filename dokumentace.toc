@@ -1,30 +1,32 @@
 \babel@toc {czech}{}\relax 
-\contentsline {section}{\numberline {1}Úvod}{5}{}%
-\contentsline {section}{\numberline {2}Teorie}{6}{}%
-\contentsline {subsection}{\numberline {2.1}Úvod do grafů}{6}{}%
-\contentsline {subsection}{\numberline {2.2}Depth First Search}{7}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Popis algoritmu}{7}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Funkcionalita algoritmu}{7}{}%
-\contentsline {subsubsection}{\numberline {2.2.3}Výhody a nevýhody algoritmu}{7}{}%
-\contentsline {subsubsection}{\numberline {2.2.4}Využití algoritmu}{7}{}%
-\contentsline {subsubsection}{\numberline {2.2.5}Ukázka implementace algoritmu}{8}{}%
-\contentsline {subsection}{\numberline {2.3}Breadth First Search}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Popis algoritmu}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}Funkcionalita algoritmu}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.3}Výhody a nevýhody algoritmu}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.4}Využití algoritmu}{10}{}%
-\contentsline {subsubsection}{\numberline {2.3.5}Ukázka implementace algoritmu}{10}{}%
-\contentsline {subsection}{\numberline {2.4}Dijkstrův algoritmus}{13}{}%
-\contentsline {subsubsection}{\numberline {2.4.1}Popis algoritmu}{13}{}%
-\contentsline {subsubsection}{\numberline {2.4.2}Funkcionalita algoritmu}{13}{}%
-\contentsline {subsubsection}{\numberline {2.4.3}Výhody a nevýhody algoritmu}{13}{}%
-\contentsline {subsubsection}{\numberline {2.4.4}Využití algoritmu}{13}{}%
-\contentsline {subsubsection}{\numberline {2.4.5}Ukázka implementace algoritmu}{14}{}%
-\contentsline {section}{\numberline {3}Aplikace}{17}{}%
-\contentsline {subsection}{\numberline {3.1}Využité technologie}{17}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Javascript}{17}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}Svelte}{17}{}%
-\contentsline {subsection}{\numberline {3.2}Vizualizace}{18}{}%
-\contentsline {subsubsection}{\numberline {3.2.1}Vykreslování cest}{18}{}%
-\contentsline {section}{\numberline {4}Závěr}{20}{}%
-\contentsline {section}{\numberline {5}Literatura}{21}{}%
+\contentsline {section}{\numberline {1}Úvod}{7}{}%
+\contentsline {section}{\numberline {2}Teorie}{8}{}%
+\contentsline {subsection}{\numberline {2.1}Úvod do~grafů}{8}{}%
+\contentsline {subsection}{\numberline {2.2}Depth First Search}{9}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Popis algoritmu}{9}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Funkcionalita algoritmu}{9}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}Výhody a~nevýhody algoritmu}{9}{}%
+\contentsline {subsubsection}{\numberline {2.2.4}Využití algoritmu}{9}{}%
+\contentsline {subsubsection}{\numberline {2.2.5}Ukázka implementace algoritmu}{10}{}%
+\contentsline {subsection}{\numberline {2.3}Breadth First Search}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Popis algoritmu}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Funkcionalita algoritmu}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}Výhody a nevýhody algoritmu}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.4}Využití algoritmu}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.5}Ukázka implementace algoritmu}{12}{}%
+\contentsline {subsection}{\numberline {2.4}Dijkstrův algoritmus}{15}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Popis algoritmu}{15}{}%
+\contentsline {subsubsection}{\numberline {2.4.2}Funkcionalita algoritmu}{15}{}%
+\contentsline {subsubsection}{\numberline {2.4.3}Výhody a nevýhody algoritmu}{15}{}%
+\contentsline {subsubsection}{\numberline {2.4.4}Využití algoritmu}{15}{}%
+\contentsline {subsubsection}{\numberline {2.4.5}Ukázka implementace algoritmu}{16}{}%
+\contentsline {section}{\numberline {3}Aplikace}{19}{}%
+\contentsline {subsection}{\numberline {3.1}Využité technologie}{19}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Javascript}{19}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Svelte}{19}{}%
+\contentsline {subsection}{\numberline {3.2}Vizualizace}{20}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Canvas}{20}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Vykreslování cest}{20}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Animace průchodu}{21}{}%
+\contentsline {section}{\numberline {4}Závěr}{22}{}%
+\contentsline {section}{\numberline {5}Literatura}{23}{}%
