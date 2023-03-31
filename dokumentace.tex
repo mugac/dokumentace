@@ -1,6 +1,7 @@
 \documentclass[12pt, titlepage, a4paper]{article}
 
 \usepackage{cmap}
+\usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[czech]{babel}
@@ -592,6 +593,11 @@ a je možné k nim následně přistupovat a pracovat s nimi. Takovouto možnost
 canvas nenabízí, jelikož html canvas nezaznamenává jednotlivé objekty, ale pouze
 vybarvené pixely.
 \\
+\begin{figure}[h]
+    \includegraphics[scale=0.8]{files/Vystup.png}
+    \caption{Ukázka grafického výstupu}
+\end{figure}
+
 
 Proto bylo zapotřebí přijít s řešením pro interakci s prvky grafu bez využití
 interaktivních funkcí jednotlivých objektů jako například v C\# WPF.
@@ -665,6 +671,8 @@ prohledávání do šířky a vyhledávání nejkratší cesty pomocí Dijkstrov
 \\
 Výstupem práce je webová aplikace, která umožňuje vizualizaci průchodu grafů pro různé algoritmy.
 Webovou stránku je nadále možné rozšiřovat o další algoritmy na procházení grafů.
+\clearpage
+\listoffigures
 \clearpage
 \section{Literatura}
 \begin{thebibliography}{99}

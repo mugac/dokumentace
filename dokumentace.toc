@@ -26,7 +26,7 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Svelte}{19}{}%
 \contentsline {subsection}{\numberline {3.2}Vizualizace}{20}{}%
 \contentsline {subsubsection}{\numberline {3.2.1}Canvas}{20}{}%
-\contentsline {subsubsection}{\numberline {3.2.2}Vykreslování cest}{20}{}%
-\contentsline {subsubsection}{\numberline {3.2.3}Animace průchodu}{21}{}%
-\contentsline {section}{\numberline {4}Závěr}{22}{}%
-\contentsline {section}{\numberline {5}Literatura}{23}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Vykreslování cest}{21}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Animace průchodu}{22}{}%
+\contentsline {section}{\numberline {4}Závěr}{23}{}%
+\contentsline {section}{\numberline {5}Literatura}{25}{}%
